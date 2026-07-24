@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scandinavian Lumea - Official RP Guidebook</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lumea: {
+              gold: '#f59e0b',
+              dark: '#090d16',
+              card: '#111827',
+              accent: '#3b82f6',
+              ruby: '#ef4444'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-lumea-dark text-slate-200 font-sans leading-relaxed selection:bg-amber-500 selection:text-black">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 bg-slate-900/90 backdrop-blur-md border-b border-amber-500/20 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold tracking-widest text-amber-400 flex items-center gap-2">
+        <i class="fa-solid font-bold fa-crown text-amber-500"></i> SCANDINAVIAN LUMEA
+      </a>
+      <div class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="#about" class="hover:text-amber-400 transition">Tentang RP</a>
+        <a href="#lore" class="hover:text-amber-400 transition">Latar Belakang</a>
+        <a href="#deity" class="hover:text-amber-400 transition">Dewa</a>
+        <a href="#planets" class="hover:text-amber-400 transition">Planet & Benua</a>
+        <a href="#factions" class="hover:text-amber-400 transition">Kerajaan & Tempat</a>
+        <a href="#system" class="hover:text-amber-400 transition">Sistem Battle</a>
+        <a href="#register" class="hover:text-amber-400 transition">Pendaftaran</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header class="relative py-24 text-center bg-gradient-to-b from-slate-900 via-lumea-dark to-lumea-dark border-b border-slate-800">
+    <div class="max-w-4xl mx-auto px-4">
+      <span class="text-amber-400 uppercase tracking-widest text-xs font-semibold px-3 py-1 bg-amber-500/10 rounded-full border border-amber-500/20">Official Roleplay Community</span>
+      <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600 mt-4 mb-6">
+        SCANDINAVIAN LUMEA
+      </h1>
+      <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto">
+        Jelajahi keajaiban benua, tempa takdirmu, dan raih kejayaan di bawah naungan para dewa purba.
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-12 space-y-20">
+
+    <!-- Section 1: Pengertian RP & Istilah -->
+    <section id="about" class="scroll-mt-20 space-y-6">
+      <div class="flex items-center gap-3 border-b border-amber-500/20 pb-3">
+        <i class="fa-solid fa-book-open text-amber-400 text-2xl"></i>
+        <h2 class="text-2xl md:text-3xl font-bold text-amber-400">Pengertian Roleplay & Aturan Dasar</h2>
+      </div>
+
+      <div class="bg-lumea-card p-6 rounded-xl border border-slate-800 shadow-xl space-y-4">
+        <h3 class="text-xl font-semibold text-amber-300">Apa itu Roleplay (RP)?</h3>
+        <p class="text-slate-300">
+          <strong>Roleplay (RP)</strong> adalah kegiatan bermain peran di mana kamu membuat, mengendalikan, dan berakting sebagai karakter rekaan (<em>Original Character / OC</em>) di dalam sebuah dunia fiksi. Seluruh ucapan, tindakan, dan keputusan diambil sepenuhnya dari sudut pandang karakter tersebut.
+        </p>
+      </div>
+
+      <div class="bg-lumea-card p-6 rounded-xl border border-slate-800 shadow-xl space-y-4">
+        <h3 class="text-xl font-semibold text-amber-300">Istilah Dasar Roleplay</h3>
+        <ul class="grid md:grid-cols-2 gap-4 text-sm">
+          <li class="p-3 bg-slate-900/60 rounded-lg border border-slate-800">
+            <strong class="text-amber-400 block">IC (In Character)</strong>
+            Segala aksi, dialog, dan interaksi yang dilakukan oleh karaktermu di dalam dunia Scandinavian Lumea.
+          </li>
+          <li class="p-3 bg-slate-900/60 rounded-lg border border-slate-800">
+            <strong class="text-amber-400 block">OOC (Out of Character)</strong>
+            Obrolan kamu sebagai pemain asli di dunia nyata, berada di luar realm drama/peran.
+          </li>
+          <li class="p-3 bg-slate-900/60 rounded-lg border border-slate-800 md:col-span-2 border-red-500/30 bg-red-950/10">
+            <strong class="text-red-400 block"><i class="fa-solid fa-ban"></i> Larangan Plot Armor Berlebihan</strong>
+            Di komunitas Scandinavian Lumea, penggunaan <strong>Plot Armor yang berlebihan sangat dilarang!</strong> Karakter tidak boleh tidak bisa terluka, selalu menang tanpa alasan logis, atau kebal dari konsekuensi cerita. Setiap kekalahan dan perjuangan adalah bagian penting dari perkembangan narasi.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section 2: Latar Belakang Dunia (Lore) -->
+    <section id="lore" class="scroll-mt-20 space-y-6">
+      <div class="flex items-center gap-3 border-b border-amber-500/20 pb-3">
+        <i class="fa-solid fa-scroll text-amber-400 text-2xl"></i>
+        <h2 class="text-2xl md:text-3xl font-bold text-amber-400">Latar Belakang Dunia</h2>
+      </div>
+
+      <div class="bg-lumea-card p-6 md:p-8 rounded-xl border border-slate-800 shadow-xl space-y-4 text-slate-300 leading-relaxed">
+        <p>
+          Di awal penciptaan, <strong>Scandinavian Lumea</strong> lahir dari harmoni dua entitas purba: <strong>Kazuma</strong>, <em>The God Creator</em>, dan <strong>Vlynec</strong>, <em>God of the Universe</em>. Keduanya berdiri berdampingan demi menciptakan dunia yang kelak dipenuhi kehidupan.
+        </p>
+        <p>
+          Vlynec membentuk daratan luas, pegunungan, hutan, lautan, dan langit tanpa ujung. Namun dunia itu masih sunyi. Lalu Kazuma mengalirkan waktu ke seluruh benua. Angin mulai bergerak, musim mulai berganti, dan kehidupan pertama akhirnya lahir.
+        </p>
+        <p>
+          Ras yang telah lahir mulai belajar berbicara, membangun, bertahan hidup, dan bermimpi. Pedang ditempa untuk bertarung, perisai diangkat untuk melindungi, sementara mantra sihir mulai menggema di bawah langit Lumea.
+        </p>
+        <p>
+          Kazuma menciptakan <strong>Great Clock</strong>, peninggalan suci yang menjaga aliran waktu dunia. Sementara Vlynec membangun <strong>Silver Sky</strong>, pelindung raksasa yang menjaga Lumea dari kekuatan luar.
+        </p>
+        <p>
+          Namun para dewa tidak menentukan seluruh takdir. Berbagai ras mulai memenuhi benua, membangun kerajaan, menciptakan perang, kedamaian, tragedi, dan legenda mereka sendiri. Kazuma dan Vlynec hanya mengawasi dari kejauhan, membiarkan dunia berkembang sesuai kehendak penghuninya.
+        </p>
+        <p class="pt-2 text-amber-200 italic border-t border-slate-800">
+          Kini, di tahun 1.400, Scandinavian Lumea berkembang menjadi pusat peradaban dan sihir. Kota-kota besar berdiri megah, guild dipenuhi para petualang, dan kisah baru terus tercipta setiap harinya. Dari sinilah semuanya dimulai. Dari pedang yang terhunus, busur yang menarik anak panah, perisai yang menjaga pemiliknya, hingga mantra sihir yang diucapkan di bawah langit Lumea.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3: Dewa Scandinavian Lumea -->
+    <section id="deity" class="scroll-mt-20 space-y-6">
+      <div class="flex items-center gap-3 border-b border-amber-500/20 pb-3">
+        <i class="fa-solid fa-ankh text-amber-400 text-2xl"></i>
+        <h2 class="text-2xl md:text-3xl font-bold text-amber-400">Dewa Scandinavian Lumea</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Kazuma Card -->
+        <div class="bg-lumea-card rounded-xl border border-amber-500/30 overflow-hidden shadow-xl">
+          <div class="p-6 space-y-3">
+            <h3 class="text-2xl font-bold text-amber-300">Kazuma</h3>
+            <p class="text-xs font-semibold text-amber-500 uppercase tracking-wider">The God Creator</p>
+            <p class="text-sm text-slate-300">Dewa yang menciptakan awal dari segalanya dan akhir dari segalanya.</p>
+            
+            <details class="group mt-4">
+              <summary class="cursor-pointer font-semibold text-amber-400 hover:text-amber-300 transition flex items-center gap-2 pt-2 border-t border-slate-800">
+                <span>Lihat Biografi Lengkap</span>
+                <i class="fa-solid fa-chevron-down text-xs transition group-open:rotate-180"></i>
+              </summary>
+              <div class="mt-4 p-4 bg-slate-900/80 rounded-lg border border-slate-800 text-sm space-y-2">
+                <p><strong>Nama:</strong> Kazuma</p>
+                <p><strong>Umur:</strong> ???</p>
+                <p><strong>Tinggi Badan:</strong> ???</p>
+                <p><strong>Ras:</strong> ???</p>
+                <p><strong>Title:</strong> The Creator, the beginning, All One, the god Finality</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- Vlynec Card -->
+        <div class="bg-lumea-card rounded-xl border border-blue-500/30 overflow-hidden shadow-xl">
+          <div class="p-6 space-y-3">
+            <h3 class="text-2xl font-bold text-blue-300">Vlynec</h3>
+            <p class="text-xs font-semibold text-blue-400 uppercase tracking-wider">The God Of Universe</p>
+            <p class="text-sm text-slate-300">Dewa yang menciptakan kehidupan yang kini berjalan di Scandinavian Lumea.</p>
+            
+            <details class="group mt-4">
+              <summary class="cursor-pointer font-semibold text-blue-400 hover:text-blue-300 transition flex items-center gap-2 pt-2 border-t border-slate-800">
+                <span>Lihat Biografi Lengkap</span>
+                <i class="fa-solid fa-chevron-down text-xs transition group-open:rotate-180"></i>
+              </summary>
+              <div class="mt-4 p-4 bg-slate-900/80 rounded-lg border border-slate-800 text-sm space-y-2">
+                <p><strong>Nama:</strong> Vlynec</p>
+                <p><strong>Umur:</strong> ???</p>
+                <p><strong>Tinggi Badan:</strong> ???</p>
+                <p><strong>Ras:</strong> ???</p>
+                <p><strong>Title:</strong> God of universe, The god destruction, the beginning of life</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Planet & Benua -->
+    <section id="planets" class="scroll-mt-20 space-y-6">
+      <div class="flex items-center gap-3 border-b border-amber-500/20 pb-3">
+        <i class="fa-solid fa-globe text-amber-400 text-2xl"></i>
+        <h2 class="text-2xl md:text-3xl font-bold text-amber-400">Planet & Benua</h2>
+      </div>
+
+      <div class="space-y-6">
+        <!-- Planet Scandilium -->
+        <details class="group bg-lumea-card rounded-xl border border-amber-500/30 overflow-hidden shadow-xl">
+          <summary class="p-6 cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-amber-600 to-yellow-300 border-2 border-amber-300 shadow-lg flex items-center justify-center text-slate-950 font-bold">
+                <i class="fa-solid fa-ring"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-amber-300">Scandilium</h3>
+                <p class="text-xs text-slate-400">Planet berbentuk bulat berwarna emas dengan pusaran cincin di sekelilingnya.</p>
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-down text-amber-400 transition group-open:rotate-180"></i>
+          </summary>
+          <div class="p-6 border-t border-slate-800 bg-slate-950/50 grid md:grid-cols-2 gap-4">
+            <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800">
+              <h4 class="font-bold text-amber-400">The Forgelands</h4>
+              <p class="text-xs text-slate-300 mt-1">Sebuah padang tandus, tidak ada tumbuhan yang tumbuh di sekitar, hanya tanah yang tandus.</p>
+            </div>
+            <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800">
+              <h4 class="font-bold text-amber-400">Gate of Demon</h4>
+              <p class="text-xs text-slate-300 mt-1">Gunung berapi yang begitu besar, sangat panas, awan cerah pun tertutup asap hitam. Pintu bagi para ras demon.</p>
+            </div>
+            <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800">
+              <h4 class="font-bold text-amber-400">War'd Den</h4>
+              <p class="text-xs text-slate-300 mt-1">Reruntuhan perang kuno masa lalu dengan puing-puing peperangan yang konon mengarah ke The Monarch.</p>
+            </div>
+            <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800">
+              <h4 class="font-bold text-amber-400">Clasing Rock's</h4>
+              <p class="text-xs text-slate-300 mt-1">Padang pasir dengan bebatuan melayang akibat sisa sihir perang di masa lampau.</p>
+            </div>
+            <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800">
+              <h4 class="font-bold text-amber-400">Grove of Cleos</h4>
+              <p class="text-xs text-slate-300 mt-1">Sebuah benua yang hanya diisi oleh pepohonan, hutan luas sejauh mata memandang.</p>
+            </div>
+            <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800">
+              <h4 class="font-bold text-amber-400">Sea Of The Valley</h4>
+              <p class="text-xs text-slate-300 mt-1">Benua air yang sangat luas. Seluruh air di planet Scandilium berasal dari benua ini.</p>
+            </div>
+            <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800 md:col-span-2">
+              <h4 class="font-bold text-amber-400">King's Peak</h4>
+              <p class="text-xs text-slate-300 mt-1">Sebuah wilayah bersalju abadi yang tidak pernah meleleh.</p>
+            </div>
+          </div>
+        </details>
+
+        <!-- Planet Noctrya -->
+        <details class="group bg-lumea-card rounded-xl border border-blue-500/30 overflow-hidden shadow-xl">
+          <summary class="p-6 cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-blue-700 to-cyan-400 border-2 border-cyan-300 shadow-lg flex items-center justify-center text-slate-950 font-bold">
+                <i class="fa-solid fa-water"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-blue-300">Noctrya</h3>
+                <p class="text-xs text-slate-400">Sebuah planet berwarna biru samudra yang sangat indah.</p>
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-down text-blue-400 transition group-open:rotate-180"></i>
+          </summary>
+          <div class="p-6 border-t border-slate-800 bg-slate-950/50 grid md:grid-cols-2 gap-4">
+            <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800">
+              <h4 class="font-bold text-cyan-300">Faenia Asphodelyn</h4>
+              <p class="text-xs text-slate-300 mt-1">Pegunungan tinggi berselimut kabut perak dengan tebing tajam memancarkan cahaya kehijauan samar.</p>
+            </div>
+            <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800">
+              <h4 class="font-bold text-cyan-300">Ymrrirn</h4>
+              <p class="text-xs text-slate-300 mt-1">Pegunungan bersalju tanpa akhir dengan es kristal yang memantulkan cahaya biru pucat.</p>
+            </div>
+            <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800">
+              <h4 class="font-bold text-cyan-300">Lirael Lands</h4>
+              <p class="text-xs text-slate-300 mt-1">Sabana luas berbidang tanah merah retak dengan uap panas berkilau merah saat malam.</p>
+            </div>
+            <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800">
+              <h4 class="font-bold text-cyan-300">Riftholtia Althra</h4>
+              <p class="text-xs text-slate-300 mt-1">Laut luas berselimut kabut tipis dan cahaya biru samar dari kedalaman.</p>
+            </div>
+            <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800">
+              <h4 class="font-bold text-cyan-300">Archeraria</h4>
+              <p class="text-xs text-slate-300 mt-1">Hutan hujan tropis lebat berselimut kabut dan cahaya redup yang asri.</p>
+            </div>
+            <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800">
+              <h4 class="font-bold text-cyan-300">Ankan Tethshara</h4>
+              <p class="text-xs text-slate-300 mt-1">Gurun merah keemasan dengan tebing batu raksasa membentuk lorong gerbang kuno.</p>
+            </div>
+            <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800">
+              <h4 class="font-bold text-cyan-300">Merosaerun</h4>
+              <p class="text-xs text-slate-300 mt-1">Tanah retak berisikan lautan magma merah menyala dan batu hitam seperti taring.</p>
+            </div>
+            <div class="p-4 bg-slate-900/80 rounded-lg border border-slate-800">
+              <h4 class="font-bold text-cyan-300">Village Windmere Fields</h4>
+              <p class="text-xs text-slate-300 mt-1">Pedesaan dengan ladang luas yang diawasi oleh roh penjaga panen.</p>
+            </div>
+          </div>
+        </details>
+
+        <!-- Planet Arsigallium -->
+        <details class="group bg-lumea-card rounded-xl border border-purple-500/30 overflow-hidden shadow-xl">
+          <summary class="p-6 cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-purple-900 to-black border-2 border-purple-500 shadow-lg flex items-center justify-center text-purple-300 font-bold">
+                <i class="fa-solid fa-circle-dot"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-purple-300">Arsigallium</h3>
+                <p class="text-xs text-slate-400">Sebuah planet misterius yang terbuat dari Black Hole.</p>
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-down text-purple-400 transition group-open:rotate-180"></i>
+          </summary>
+          <div class="p-6 border-t border-slate-800 bg-slate-950/50 text-center text-slate-400 italic">
+            ???? Coming Soon
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Section 5: Kerajaan & Tempat Penting -->
+    <section id="factions" class="scroll-mt-20 space-y-8">
+      <div class="flex items-center gap-3 border-b border-amber-500/20 pb-3">
+        <i class="fa-solid fa-castle text-amber-400 text-2xl"></i>
+        <h2 class="text-2xl md:text-3xl font-bold text-amber-400">Kerajaan & Tempat Penting</h2>
+      </div>
+
+      <!-- Kerajaan -->
+      <div class="space-y-4">
+        <h3 class="text-xl font-semibold text-amber-300">Kekaisaran & Kerajaan Utama</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="p-4 bg-lumea-card rounded-lg border border-slate-800">
+            <h4 class="font-bold text-amber-400">Sanctum Monarchia</h4>
+            <p class="text-xs text-slate-300 mt-1">Istana megah yang hanya dimiliki oleh dia yang pantas menyandang gelar "Monarch".</p>
+          </div>
+          <div class="p-4 bg-lumea-card rounded-lg border border-slate-800">
+            <h4 class="font-bold text-amber-400">The Seraphim Palace</h4>
+            <p class="text-xs text-slate-300 mt-1">Kerajaan suci megah di atas langit milik ras Angel.</p>
+          </div>
+          <div class="p-4 bg-lumea-card rounded-lg border border-slate-800">
+            <h4 class="font-bold text-amber-400">Arcadia Empire & Tenr'ai Empire</h4>
+            <p class="text-xs text-slate-300 mt-1">Kekaisaran megah dipimpin oleh ras manusia dengan populasi mayoritas manusia.</p>
+          </div>
+          <div class="p-4 bg-lumea-card rounded-lg border border-slate-800">
+            <h4 class="font-bold text-amber-400">Elven Vanguard Council & Elven Rei Van'Guadz</h4>
+            <p class="text-xs text-slate-300 mt-1">Kekaisaran ras kuno Elf yang bersembunyi di balik tabir hutan sihir.</p>
+          </div>
+          <div class="p-4 bg-lumea-card rounded-lg border border-slate-800">
+            <h4 class="font-bold text-amber-400">Aeu'l Rashomon & Hellcourt Imperial Seat</h4>
+            <p class="text-xs text-slate-300 mt-1">Kekaisaran ras Demon tak tertandingi dengan kekuatan yang sangat menakutkan.</p>
+          </div>
+          <div class="p-4 bg-lumea-card rounded-lg border border-slate-800">
+            <h4 class="font-bold text-amber-400">The Seiryū Valdora</h4>
+            <p class="text-xs text-slate-300 mt-1">Kekaisaran ras Dragon pemegang kekuatan kuno yang sangat besar.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fasilitas & Tempat Penting -->
+      <div class="space-y-4">
+        <h3 class="text-xl font-semibold text-amber-300">Fasilitas & Lokasi Penting</h3>
+        <div class="grid md:grid-cols-3 gap-3 text-sm">
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Ibu Kota</strong>Pusat awal bagi seluruh petualang memulai perjalanannya.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Guild Adventure</strong>Tempat pendaftaran petualang, berburu monster, dan mengambil quest.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Library (The Vitae Codex)</strong>Perpustakaan terbesar untuk mendapatkan dan membeli skill.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Sea Bank</strong>Pusat sirkulasi seluruh mata uang yang beredar di Lumea.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Majlis Agung Lumea</strong>Penegak hukum di seluruh benua agar kejahatan teradili.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Heheav Lumea Hospital</strong>Rumah sakit penyembuh luka petualang usai bertarung.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Undersea Prison</strong>Penjara bawah laut bagi narapidana kejahatan.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Mithrill Underground</strong>Tambang kuno berdaya sihir penghasil ore murni.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Seraxla Dungeon</strong>Dungeon kuno yang tersebar di beberapa wilayah.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Cathedral Cavlyver</strong>Katedral putih murni bersinar di antara nisan batu tua.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Aegis Physic Academy</strong>Akademi bimbingan bagi para pejuang muda.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Blacksmith</strong>Toko penyedia perlengkapan senjata para petualang.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Tavern & Inn</strong>Bar dan penginapan nyaman yang tersebar di seluruh wilayah.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Bakery</strong>Toko roti terkenal dengan cabang di berbagai kekaisaran.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Cyntia & Heryvra Shop</strong>Tempat melakukan upgrade weapon dan armor milik petualang.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800"><strong class="text-amber-400 block">Pet Trade Center</strong>Penjualan hewan peliharaan penyokong quest.</div>
+          <div class="p-3 bg-slate-900/60 rounded-lg border border-slate-800 md:col-span-2"><strong class="text-amber-400 block">Potion & Boutique Shop</strong>Toko potion medis/sihir serta busana busana terkenal.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Sistem Pertarungan & Turn-Based -->
+    <section id="system" class="scroll-mt-20 space-y-6">
+      <div class="flex items-center gap-3 border-b border-amber-500/20 pb-3">
+        <i class="fa-solid fa-shield-halved text-amber-400 text-2xl"></i>
+        <h2 class="text-2xl md:text-3xl font-bold text-amber-400">Sistem Pertarungan & Stat</h2>
+      </div>
+
+      <!-- Stat Dasar -->
+      <div class="grid md:grid-cols-5 gap-3 text-center">
+        <div class="bg-lumea-card p-4 rounded-xl border border-slate-800">
+          <div class="text-red-400 font-bold text-xl mb-1">HP</div>
+          <div class="text-xs text-slate-400">Health Points / Nyawa karakter.</div>
+        </div>
+        <div class="bg-lumea-card p-4 rounded-xl border border-slate-800">
+          <div class="text-blue-400 font-bold text-xl mb-1">END / MP</div>
+          <div class="text-xs text-slate-400">Endurance / Mana Points untuk skill.</div>
+        </div>
+        <div class="bg-lumea-card p-4 rounded-xl border border-slate-800">
+          <div class="text-amber-400 font-bold text-xl mb-1">ATK</div>
+          <div class="text-xs text-slate-400">Attack Power / Potensi damage.</div>
+        </div>
+        <div class="bg-lumea-card p-4 rounded-xl border border-slate-800">
+          <div class="text-emerald-400 font-bold text-xl mb-1">DEF</div>
+          <div class="text-xs text-slate-400">Defense / Pengurang damage.</div>
+        </div>
+        <div class="bg-lumea-card p-4 rounded-xl border border-slate-800">
+          <div class="text-purple-400 font-bold text-xl mb-1">SPD</div>
+          <div class="text-xs text-slate-400">Speed / Kecepatan aksi & turn.</div>
+        </div>
+      </div>
+
+      <p class="text-slate-300 text-sm">
+        Pertarungan dapat dilakukan dengan sistem narasi Roleplay biasa atau menggunakan sistem <strong>Turn-Based GM Prompt AI</strong> di bawah ini:
+      </p>
+
+      <!-- Turn Based Prompt Box -->
+      <details class="group bg-lumea-card rounded-xl border border-amber-500/30 overflow-hidden shadow-xl">
+        <summary class="p-5 cursor-pointer flex justify-between items-center bg-slate-900 font-semibold text-amber-400">
+          <span><i class="fa-solid fa-robot mr-2"></i> Klik Untuk Melihat / Salin Prompt GM RP Turn-Based (AI)</span>
+          <i class="fa-solid fa-chevron-down text-xs transition group-open:rotate-180"></i>
+        </summary>
+        <div class="p-6 bg-slate-950 font-mono text-xs text-slate-300 leading-relaxed overflow-x-auto space-y-4">
+          <p class="text-amber-300 font-bold">// Prompt Turn Base RP - Salin teks di bawah ini ke AI pilihanmu:</p>
+          <pre class="whitespace-pre-wrap bg-slate-900 p-4 rounded-lg border border-slate-800">Kamu adalah Game Master (GM) untuk RP turn-based. Tugasmu mengendalikan monster, menghitung seluruh mekanik pertarungan, dan menjaga jalannya battle.
+
+Aturan:
+1. Sebelum battle dimulai, hitung seluruh SPD (termasuk bonus dari senjata/equipment jika ada), lalu tentukan Turn Order menggunakan sistem berdasarkan Speed/Action Value, bukan sistem ronde biasa. Karakter atau monster dengan SPD lebih tinggi dapat memperoleh giliran lebih sering.
+2. Setelah Turn Order ditentukan, mulai gameplay.
+3. Jika pemain hanya menggunakan satu karakter (solo), kamu boleh mensimulasikan aksi karakter tersebut jika pemain hanya memberi perintah singkat seperti "pakai senjata", "basic attack", "pakai heal", atau "pakai zodiak". Namun jika pemain memberikan detail skill, gunakan detail tersebut.
+4. Jika pemain menggunakan party, jangan pernah memainkan karakter party selain monster. Pemain akan mengirim aksi setiap anggota party secara bergantian. Tugasmu hanya:
+- Menghitung damage.
+- Menghitung heal.
+- Menghitung shield.
+- Menghitung buff/debuff.
+- Mengurangi atau menambah HP.
+- Memperbarui status.
+- Menentukan giliran berikutnya.
+5. Kamu hanya mengendalikan monster sepenuhnya.
+6. Setelah setiap aksi, tampilkan secara singkat:
+- Damage atau Heal yang terjadi.
+- HP seluruh party.
+- HP monster.
+- Giliran berikutnya.
+
+Contoh:
+Turn 1
+Monster menyerang P1.
+P1 menerima 235 Damage.
+
+HP:
+- Monster: 10000/10000
+- P1: 5565/5800
+- P2: 5800/5800
+- P3: 2800/2800
+- P4: 2800/2800
+- P5: 1800/1800
+
+Next Turn: P1
+
+7. Jangan membuat narasi panjang. Cukup 1 sampai 2 kalimat pendek agar battle berjalan cepat.
+8. Selalu ingat seluruh cooldown, buff, debuff, DOT, HOT, lifesteal, regeneration, summon, shield, silence, stun, root, poison, burn, serta seluruh efek skill sampai battle selesai.
+9. Setelah monster atau party kalah, tampilkan Battle Summary.
+
+Format Battle Summary:
+Battle Summary
+Winner:
+MVP:
+
+Contribution
+- P1
+  - Damage:
+  - Damage Diterima:
+  - Heal:
+- P2
+  - Damage:
+  - Damage Diterima:
+  - Heal:
+- P3
+  - Damage:
+  - Damage Diterima:
+  - Heal:
+- P4
+  - Damage:
+  - Damage Diterima:
+  - Heal:
+- P5
+  - Damage:
+  - Damage Diterima:
+  - Heal:
+
+HP Akhir:
+- Seluruh anggota party
+- Monster
+
+Reward:
+- Tampilkan loot sesuai data monster.
+
+10. Jangan mengubah statistik karakter atau monster yang diberikan pemain. Gunakan hanya data yang diberikan. Jika ada data yang belum tersedia, tanyakan terlebih dahulu.
+11. Selalu gunakan format yang konsisten dari awal hingga akhir battle.</pre>
+        </div>
+      </details>
+
+      <!-- Efek Skill Accordion -->
+      <details class="group bg-lumea-card rounded-xl border border-slate-800 overflow-hidden shadow-xl">
+        <summary class="p-5 cursor-pointer flex justify-between items-center bg-slate-900 font-semibold text-slate-200">
+          <span><i class="fa-solid fa-wand-magic-sparkles text-amber-400 mr-2"></i> Daftar Lengkap Efek Skill (Glosarium)</span>
+          <i class="fa-solid fa-chevron-down text-xs transition group-open:rotate-180"></i>
+        </summary>
+        <div class="p-6 bg-slate-950 grid md:grid-cols-3 gap-3 text-xs">
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Amplify:</strong> Naikkan damage diterima target</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">AoE:</strong> Serangan area</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Armor Break/Shred:</strong> Turunkan DEF target</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Armor Penetration:</strong> Abaikan sebagian DEF</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Attack Speed:</strong> Kecepatan serang naik</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Aura:</strong> Efek pasif sekitar pengguna</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Bleed:</strong> DoT tipe darah</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Blind:</strong> Kurangi Akurasi/Crit Rate</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Blink:</strong> Teleport jarak pendek</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Bloom:</strong> Ledakan kedua (AoE)</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Buff:</strong> Efek positif ke tim</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Burn:</strong> DoT tipe api</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Burst:</strong> Damage besar singkat</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Cast Skill:</strong> Waktu rapal skill</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">CD/Cooldown:</strong> Waktu tunggu skill</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Chain:</strong> Lompat ke beberapa target</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Channel:</strong> Skill tahan (batal jika CC)</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Charm:</strong> Target serang tim sendiri</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Cleanse:</strong> Hapus debuff</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Combo:</strong> Damage naik jika berurutan</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Corroding/Corrosion:</strong> Kurangi Armor + DoT</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Counter:</strong> Membalas serangan saat kena hit</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Crit Rate / Damage:</strong> Peluang & bonus Crit</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Crowd Control (CC):</strong> Efek pelumpuh</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Cripple:</strong> Kurangi ATK + Move Speed</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Damage Reduction:</strong> Kurangi damage diterima</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Dash:</strong> Gerak cepat ke arah tertentu</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Debuff:</strong> Efek negatif ke musuh</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Decoy:</strong> Tiruan pengalih target</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Deployable:</strong> Taruh objek/turret</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">DoT:</strong> Damage Over Time</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Evasion:</strong> Peluang hindari serangan</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Execute:</strong> Damage besar ke HP rendah</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Fear:</strong> Target lari/tak bisa serang</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Field:</strong> Buat area efek di tanah</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Fortify:</strong> Naikkan DEF + Damage Red.</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">HoT / HP Regen:</strong> Heal Over Time / Pasif</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Immune:</strong> Kebal efek/damage tertentu</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">KnockBack:</strong> Dorong target ke belakang</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Lifesteal:</strong> Ubah %damage jadi heal</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Marked:</strong> Target kena damage lebih besar</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Paralyze / Stun:</strong> Tidak bisa gerak/aksi</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Poison:</strong> DoT tipe racun</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Root:</strong> Kunci pergerakan</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Shield:</strong> Serap damage sebelum HP</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Silence:</strong> Tak bisa pakai skill magic</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">Taunt:</strong> Paksa musuh serang pengguna</div>
+          <div class="p-2 bg-slate-900 rounded"><strong class="text-amber-400">True Damage:</strong> Damage murni abaikan DEF</div>
+        </div>
+      </details>
+    </section>
+
+    <!-- Section 7: Cara Mendaftar -->
+    <section id="register" class="scroll-mt-20 space-y-6">
+      <div class="flex items-center gap-3 border-b border-amber-500/20 pb-3">
+        <i class="fa-solid fa-user-plus text-amber-400 text-2xl"></i>
+        <h2 class="text-2xl md:text-3xl font-bold text-amber-400">Cara Mendaftar & Bergabung</h2>
+      </div>
+
+      <div class="bg-lumea-card p-6 rounded-xl border border-slate-800 shadow-xl">
+        <ol class="space-y-4 text-slate-300">
+          <li class="flex items-start gap-4">
+            <span class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold shrink-0">1</span>
+            <div><strong>Bergabung ke Komunitas:</strong> Masuk ke dalam grup/komunitas Scandinavian Lumea.</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold shrink-0">2</span>
+            <div><strong>Pahami Rules:</strong> Membaca seluruh rules komunitas dan panduan yang tersedia.</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold shrink-0">3</span>
+            <div><strong>Isi Formulir Pendaftaran:</strong> Ambil formulir di grup chat Guild Adventure dan tentukan <em>Nama OC, Ras, Class, Element, serta Zodiac Skill</em>.</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold shrink-0">4</span>
+            <div><strong>Kirim Formulir:</strong> Kirimkan formulir pendaftaran tersebut kepada petugas guild.</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold shrink-0">5</span>
+            <div><strong>Verifikasi & Stat:</strong> Tunggu persetujuan petugas serta pembuatan statistik resmi karaktermu. Selamat bertualang!</div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-8 border-t border-slate-800 text-slate-500 text-sm">
+    <p>&copy; 2026 Scandinavian Lumea Roleplay Community. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
