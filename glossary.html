@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glosarium Efek Skill - Scandinavian Lumea</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { dunia: { dark: '#090d16', card: '#111827', gold: '#f59e0b' } }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-dunia-dark text-slate-200 font-sans min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 bg-slate-900/90 backdrop-blur border-b border-amber-500/20 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="text-lg font-bold text-amber-400 flex items-center gap-2">
+        <i class="fa-solid fa-arrow-left"></i> Kembali ke Utama
+      </a>
+      <span class="text-xs font-semibold uppercase tracking-widest text-slate-400">Glosarium RP</span>
+    </div>
+  </nav>
+
+  <!-- Banner Header dengan GIF Animasi -->
+  <header class="relative py-12 text-center overflow-hidden border-b border-slate-800">
+    <img src="https://media.giphy.com/media/26brv0ThRZ3DPSCxG/giphy.gif" class="absolute inset-0 w-full h-full object-cover opacity-20 filter blur-sm" alt="Background GIF">
+    <div class="relative z-10 max-w-3xl mx-auto px-4">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">
+        Glosarium & Kamus Efek Skill
+      </h1>
+      <p class="text-sm text-slate-400 mt-2">Cari arti istilah dan efek skill yang ada di Scandinavian Lumea secara cepat.</p>
+      
+      <!-- Box Pencarian Kata (Live Search) -->
+      <div class="mt-6 relative max-w-md mx-auto">
+        <i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-slate-400"></i>
+        <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Cari efek skill (misal: Stun, AoE, DoT)..." 
+               class="w-full pl-11 pr-4 py-3 bg-slate-900/90 border border-amber-500/40 rounded-xl text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 shadow-xl text-sm">
+      </div>
+    </div>
+  </header>
+
+  <!-- Content Grid -->
+  <main class="max-w-6xl mx-auto px-4 py-8 flex-grow w-full">
+    <div id="skillGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      
+      <!-- Skill Cards -->
+      <div class="skill-card bg-dunia-card p-4 rounded-xl border border-slate-800 hover:border-amber-500/40 transition">
+        <span class="text-amber-400 font-bold text-base block mb-1">Amplify</span>
+        <p class="text-xs text-slate-300">Meningkatkan damage yang diterima oleh target.</p>
+      </div>
+
+      <div class="skill-card bg-dunia-card p-4 rounded-xl border border-slate-800 hover:border-amber-500/40 transition">
+        <span class="text-amber-400 font-bold text-base block mb-1">AoE (Area of Effect)</span>
+        <p class="text-xs text-slate-300">Menyerang area luas, bukan hanya 1 target tunggal.</p>
+      </div>
+
+      <div class="skill-card bg-dunia-card p-4 rounded-xl border border-slate-800 hover:border-amber-500/40 transition">
+        <span class="text-amber-400 font-bold text-base block mb-1">Armor Break / Shred</span>
+        <p class="text-xs text-slate-300">Menurunkan DEF target secara permanen atau sementara.</p>
+      </div>
+
+      <div class="skill-card bg-dunia-card p-4 rounded-xl border border-slate-800 hover:border-amber-500/40 transition">
+        <span class="text-amber-400 font-bold text-base block mb-1">Armor Penetration</span>
+        <p class="text-xs text-slate-300">Mengabaikan sebagian nilai DEF target saat menghitung damage.</p>
+      </div>
+
+      <div class="skill-card bg-dunia-card p-4 rounded-xl border border-slate-800 hover:border-amber-500/40 transition">
+        <span class="text-amber-400 font-bold text-base block mb-1">Bleed</span>
+        <p class="text-xs text-slate-300">DoT tipe darah. Menguras HP target secara bertahap setiap detik/turn.</p>
+      </div>
+
+      <div class="skill-card bg-dunia-card p-4 rounded-xl border border-slate-800 hover:border-amber-500/40 transition">
+        <span class="text-amber-400 font-bold text-base block mb-1">Blind</span>
+        <p class="text-xs text-slate-300">Mengurangi Akurasi atau Crit Rate target sehingga serangan sering meleset.</p>
+      </div>
+
+      <div class="skill-card bg-dunia-card p-4 rounded-xl border border-slate-800 hover:border-amber-500/40 transition">
+        <span class="text-amber-400 font-bold text-base block mb-1">Blink</span>
+        <p class="text-xs text-slate-300">Teleportasi/perpindahan instan jarak pendek.</p>
+      </div>
+
+      <div class="skill-card bg-dunia-card p-4 rounded-xl border border-slate-800 hover:border-amber-500/40 transition">
+        <span class="text-amber-400 font-bold text-base block mb-1">Burn</span>
+        <p class="text-xs text-slate-300">DoT tipe api. Menguras HP target disertai efek terbakar.</p>
+      </div>
+
+      <div class="skill-card bg-dunia-card p-4 rounded-xl border border-slate-800 hover:border-amber-500/40 transition">
+        <span class="text-amber-400 font-bold text-base block mb-1">Crowd Control (CC)</span>
+        <p class="text-xs text-slate-300">Kategori efek yang bertujuan melumpuhkan atau membatasi pergerakan musuh.</p>
+      </div>
+
+      <div class="skill-card bg-dunia-card p-4 rounded-xl border border-slate-800 hover:border-amber-500/40 transition">
+        <span class="text-amber-400 font-bold text-base block mb-1">DoT (Damage Over Time)</span>
+        <p class="text-xs text-slate-300">Kerusakan yang terjadi secara bertahap dalam jangka waktu tertentu.</p>
+      </div>
+
+      <div class="skill-card bg-dunia-card p-4 rounded-xl border border-slate-800 hover:border-amber-500/40 transition">
+        <span class="text-amber-400 font-bold text-base block mb-1">Lifesteal</span>
+        <p class="text-xs text-slate-300">Mengubah persentase damage yang diberikan menjadi pemulihan HP sendiri.</p>
+      </div>
+
+      <div class="skill-card bg-dunia-card p-4 rounded-xl border border-slate-800 hover:border-amber-500/40 transition">
+        <span class="text-amber-400 font-bold text-base block mb-1">Silence</span>
+        <p class="text-xs text-slate-300">Membuat target tidak bisa menggunakan skill tipe sihir/magic.</p>
+      </div>
+
+      <div class="skill-card bg-dunia-card p-4 rounded-xl border border-slate-800 hover:border-amber-500/40 transition">
+        <span class="text-amber-400 font-bold text-base block mb-1">Stun</span>
+        <p class="text-xs text-slate-300">Melumpuhkan total. Target tidak bisa bergerak, menyerang, atau memakai skill.</p>
+      </div>
+
+      <div class="skill-card bg-dunia-card p-4 rounded-xl border border-slate-800 hover:border-amber-500/40 transition">
+        <span class="text-amber-400 font-bold text-base block mb-1">True Damage</span>
+        <p class="text-xs text-slate-300">Damage murni yang mengabaikan DEF dan Resistance musuh sepenuhnya.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="text-center py-6 border-t border-slate-800 text-slate-500 text-xs">
+    &copy; 2026 Scandinavian Lumea Roleplay
+  </footer>
+
+  <!-- Script Pencarian Kata -->
+  <script>
+    function searchFunction() {
+      let input = document.getElementById('searchInput').value.toLowerCase();
+      let cards = document.getElementsByClassName('skill-card');
+
+      for (let i = 0; i < cards.length; i++) {
+        let text = cards[i].innerText.toLowerCase();
+        if (text.includes(input)) {
+          cards[i].style.display = "";
+        } else {
+          cards[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+</body>
+</html>
